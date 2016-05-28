@@ -5,7 +5,6 @@ from datetime import datetime, date, timedelta as td
 import datetime
 
 def get_all_filtered_upc(filtered_upc_filenames_filename, input_file_path):
-    # TODO: Toolbox
     with open(filtered_upc_filenames_filename, 'rb') as f:
         reader = csv.reader(f)
         filtered_upc_filenames = list(reader)
